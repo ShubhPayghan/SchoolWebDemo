@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Off-Canvas & Footer Navigation</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- School Navigation Bar -->
+    <header class="school-navbar">
+        <div class="logo">BHEL Secondary School</div>
+        <nav class="school-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#academics">Academics</a></li>
+                <li><a href="#admissions">Admissions</a></li>
+                <li><a href="#">Events</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <!-- Background Image Slideshow -->
+        <div class="slideshow-container">
+            <div class="slide fade" style="background-image: url('images/background1.jpg');" onclick="currentSlide(1)"></div>
+            <div class="slide fade" style="background-image: url('images/background2.jpg');" onclick="currentSlide(2)"></div>
+            <div class="slide fade" style="background-image: url('images/background3.jpg');" onclick="currentSlide(3)"></div>
+            <!-- Navigation Dots -->
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+
+        <!-- Academics Containers -->
+        <div id="academics" class="academics-container">
+            <div class="container bg-image1">
+                <h2>Academics</h2>
+                <p>Enhance your knowledge with our diverse academic programs.</p>
+                <p>We offer a range of courses designed to meet the needs of every student.</p>
+            </div>
+            <div class="container bg-image2">
+                <h2>Academics</h2>
+                <p>Explore our state-of-the-art facilities and dedicated faculty.</p>
+                <p>Our academic environment fosters growth and learning.</p>
+            </div>
+            <div class="container bg-image3">
+                <h2>Academics</h2>
+                <p>Join us and unlock your potential with our comprehensive curriculum.</p>
+                <p>Our academic excellence sets us apart from the rest.</p>
+            </div>
+        </div>
+
+        <!-- Admissions Section -->
+<section id="admissions" class="admissions-section">
+    <div class="admission-container">
+        <h2 class="admission-heading">Admissions Information</h2>
+        <div class="admission-details">
+            <h3>Classes Offered</h3>
+            <p>Class 1st to 10th: We offer admissions for students from Class 1st to 10th.</p>
+            <p>CBSE and State Board Sections: We have separate sections for CBSE and State Board curriculum, allowing parents to choose the educational board that best suits their child's needs.</p>
+        </div>
+        <div class="admission-details">
+            <h3>Admission Process</h3>
+            <p>Application Form: Interested parents/guardians can obtain the admission application form from the school office or download it from our website.</p>
+            <p>Submission: Completed application forms should be submitted to the school office along with the required documents.</p>
+            <p>Entrance Test (if applicable): Depending on the class and availability, students may be required to appear for an entrance test.</p>
+            <p>Interview: Shortlisted candidates will be called for an interview with school authorities.</p>
+            <p>Admission Confirmation: Upon successful completion of the admission process, parents will receive confirmation of admission along with further instructions.</p>
+        </div>
+        <div class="admission-details">
+            <h3>Required Documents</h3>
+            <ul>
+                <li>Birth Certificate</li>
+                <li>Previous School Records (for transfer students)</li>
+                <li>Passport-sized Photographs</li>
+                <li>Address Proof</li>
+                <li>Aadhar Card or any other Identification Proof</li>
+            </ul>
+        </div>
+        <div class="admission-details">
+            <h3>Fee Structure</h3>
+            <p>Our fee structure is transparent and competitive. Details regarding tuition fees, admission fees, and other charges are available upon request.</p>
+        </div>
+        <div class="admission-details">
+            <h3>Important Dates</h3>
+            <p>Admission Open: [Specify Dates]</p>
+            <p>Last Date for Application: [Specify Dates]</p>
+            <p>Entrance Test (if applicable): [Specify Dates]</p>
+            <p>Interview Dates: [Specify Dates]</p>
+            <p>Commencement of Academic Session: [Specify Dates]</p>
+        </div>
+        <div class="admission-details">
+            <p>For further inquiries or assistance regarding admissions, please feel free to contact the school office during working hours.</p>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <!-- Footer Navigation -->
+    <footer>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

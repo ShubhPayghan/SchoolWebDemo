@@ -1,0 +1,215 @@
+/* School Navigation Bar */
+.school-navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.school-menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.school-menu li {
+    margin-right: 20px;
+}
+
+.school-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Background Image Slideshow */
+.slideshow-container {
+    position: relative;
+    height: 100vh; /* Adjusted to fit the screen */
+    overflow: hidden;
+    margin-bottom: 0; /* Removed bottom margin */
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: left center;
+    transition: opacity 1s ease; /* Add transition effect */
+}
+
+.slide:first-child {
+    opacity: 1; /* Show the first slide initially */
+}
+
+@keyframes fade {
+    0% { opacity: 0; }
+    25% { opacity: 1; }
+    75% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.dot-container {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #fff;
+}
+
+/* Footer Navigation */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.footer-nav li {
+    margin: 0 10px;
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.footer-nav a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Academics Containers */
+.academics-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.container {
+    width: calc(33.33% - 20px); /* Adjusted width */
+    padding: 80px 20px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    margin-right: 20px; /* Added margin */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.container:last-child {
+    margin-right: 0; /* Remove margin from the last container */
+}
+
+.container:hover {
+    transform: translateY(-5px); /* Move container up slightly on hover */
+}
+
+.container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.container p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+.container.bg-image1 {
+    background-color: #5446ee;
+}
+
+.container.bg-image2 {
+    background-color: rgb(65, 241, 83);
+}
+
+.container.bg-image3 {
+    background-color: #ee4848;
+}
+
+
+/* Admissions Section */
+.admissions-section {
+    position: relative;
+    padding: 100px 20px;
+}
+
+.admission-container {
+    position: relative;
+    z-index: 1;
+    background-color: #F29F05; /* Yellow color */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.admission-container:hover {
+    transform: scale(1.05); /* Increase size on hover */
+}
+
+.admission-heading {
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.admission-details h3 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.admission-details p {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.admission-details ul {
+    list-style: none;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.admission-details ul li {
+    font-size: 18px;
+    color: #fff;
+}
+
